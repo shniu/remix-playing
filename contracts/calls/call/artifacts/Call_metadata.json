@@ -1,0 +1,96 @@
+{
+	"compiler": {
+		"version": "0.8.21+commit.d9974bed"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					},
+					{
+						"indexed": false,
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "Response",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_s",
+						"type": "uint256"
+					}
+				],
+				"name": "proxyDoCall",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "proxyOtherCall",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/calls/call/Call.sol": "Call"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/calls/call/Call.sol": {
+			"keccak256": "0x8dbbac7236565f970fac3cdd0bb0aa0b58140a2adbb1e0fa0dd9864c8fd5e8d4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1ba4b17006cc6b9c474e9b55a0e85b588ed65fed5c319de38751947d3d2b4cbc",
+				"dweb:/ipfs/QmRLgHMigp8WKUw1tmLWp69D8CGbrW9FKqC7b5kmbV9wS4"
+			]
+		}
+	},
+	"version": 1
+}

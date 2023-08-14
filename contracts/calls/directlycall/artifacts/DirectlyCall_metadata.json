@@ -1,0 +1,91 @@
+{
+	"compiler": {
+		"version": "0.8.21+commit.d9974bed"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "proxyGetState",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "s",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_s",
+						"type": "uint256"
+					}
+				],
+				"name": "proxySetState",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/calls/directlycall/DirectlyCall.sol": "DirectlyCall"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/calls/directlycall/DirectlyCall.sol": {
+			"keccak256": "0x5fb8d53dabc76b1e04fa99324b1c41ec62e089be98850c7c2b2a3bfc29856984",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6ce2b35f492f5b3573b3e96f0aa615ad339b90e5c2d2863479645dde2b80a562",
+				"dweb:/ipfs/QmRi6amDKokQ5UpRbkDwpbzGY3vPwLN56N1soHwrNKjogB"
+			]
+		},
+		"contracts/calls/directlycall/EthHolder.sol": {
+			"keccak256": "0x518cff03bcd545887893cea44dfbafa3c4a92659231eeaa36a0e2ca49065e488",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f44eb4237f76f22fb50cefd4daf78d6a900408265d85504cb83df36532a03af6",
+				"dweb:/ipfs/QmYmn1eZYxXp9cgmLQJQdeSHuQBXLhmyMuVbKmxwKjcegL"
+			]
+		}
+	},
+	"version": 1
+}
