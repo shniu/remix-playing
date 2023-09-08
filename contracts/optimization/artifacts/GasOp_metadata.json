@@ -7,7 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "count",
+				"name": "getTotal",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -19,15 +19,14 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "dec",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "inc",
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "nums",
+						"type": "uint256[]"
+					}
+				],
+				"name": "sumIfEvenAndLessThan99",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -46,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/calls/interfacecall/InterfaceCall.sol": "ICounter"
+			"contracts/optimization/GasOp.sol": "GasOp"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -60,12 +59,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/calls/interfacecall/InterfaceCall.sol": {
-			"keccak256": "0xeae79c16d2932bebc701471fefcd2bbb90a56edc82e75baca9084d5104a514d3",
+		"contracts/optimization/GasOp.sol": {
+			"keccak256": "0x84d0b27b8c8127624251b05c1c56a052358a9c21696d97c982f358c79da0d197",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://563f63e8f2a81567ef059f3e9d4e26ae246261e49544914632a71bff68b67671",
-				"dweb:/ipfs/QmcVPhwr3rbPjpc7FidZcYGKSkUeHgU5EFT3so7EszUsRd"
+				"bzz-raw://b73981986ea0fb19f58a50b4b4a25ddf0997f5d53a3860d3797ce077fd4bca6f",
+				"dweb:/ipfs/QmfAy5A1M38SHzggRST5PxQTLfykEqJyFR1VL6zvVsN6Ws"
 			]
 		}
 	},
