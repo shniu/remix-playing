@@ -24,8 +24,6 @@ contract Storage {
      * @return value of 'number'
      */
     function retrieve() public view returns (uint256){
-        address(this).abi;
-        
         return number;
     }
 }
