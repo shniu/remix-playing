@@ -1,0 +1,302 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"allowance(address,address)": {
+					"details": "Get the allowance for `spender` to spend from `owner`.",
+					"params": {
+						"owner": "The address of the account owning tokens",
+						"spender": "The address of the account able to transfer the tokens"
+					},
+					"returns": {
+						"_0": "Amount of remaining tokens allowed to spent"
+					}
+				},
+				"approve(address,uint256)": {
+					"details": "`msg.sender` approves `spender` to spend `value` tokens",
+					"params": {
+						"spender": "The address of the account able to transfer the tokens",
+						"value": "The amount of wei to be approved for transfer"
+					},
+					"returns": {
+						"_0": "Always true if the call has enough gas to complete execution"
+					}
+				},
+				"balanceOf(address)": {
+					"details": "Get the balance of `owner`.",
+					"params": {
+						"owner": "The address from which the balance will be retrieved"
+					},
+					"returns": {
+						"_0": "Balance of owner"
+					}
+				},
+				"decimals()": {
+					"details": "Get the number of decimals this token has."
+				},
+				"totalSupply()": {
+					"details": "Query total supply of token",
+					"returns": {
+						"_0": "Total supply of token"
+					}
+				},
+				"transfer(address,uint256)": {
+					"details": "send `value` token to `to` from `msg.sender`",
+					"params": {
+						"to": "The address of the recipient",
+						"value": "The amount of token to be transferred"
+					},
+					"returns": {
+						"_0": "True if transfer was successful"
+					}
+				},
+				"transferFrom(address,address,uint256)": {
+					"details": "send `value` token to `to` from `from` on the condition it is approved by `from`",
+					"params": {
+						"from": "The address of the sender",
+						"to": "The address of the recipient",
+						"value": "The amount of token to be transferred"
+					},
+					"returns": {
+						"_0": "True if transfer was successful"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/enum/enum.sol": "IERC20Token"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/enum/enum.sol": {
+			"keccak256": "0x29ac230d29774c9ff874c10c731dd136089dbfd17b3f0935754f78858441947f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://122851b820adaa93697cef0abeeac878237a8d5e7dd165dabcb62aac7caed903",
+				"dweb:/ipfs/QmSK8YsRkUWczv6SV6nszZMpMsHxNkXea3NsbV3xueuabY"
+			]
+		}
+	},
+	"version": 1
+}

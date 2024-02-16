@@ -1,0 +1,139 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getTransformERC20Selector",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract IERC20Token[]",
+						"name": "tokens",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sellAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "minBuyAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "sellToPancakeSwap",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "buyAmount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract IERC20Token",
+						"name": "inputToken",
+						"type": "address"
+					},
+					{
+						"internalType": "contract IERC20Token",
+						"name": "outputToken",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "inputTokenAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "minOutputTokenAmount",
+						"type": "uint256"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint32",
+								"name": "deploymentNonce",
+								"type": "uint32"
+							},
+							{
+								"internalType": "bytes",
+								"name": "data",
+								"type": "bytes"
+							}
+						],
+						"internalType": "struct Test20.Transformation[]",
+						"name": "transformations",
+						"type": "tuple[]"
+					}
+				],
+				"name": "transformERC20",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "outputTokenAmount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/enum/enum.sol": "Test20"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/enum/enum.sol": {
+			"keccak256": "0x29ac230d29774c9ff874c10c731dd136089dbfd17b3f0935754f78858441947f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://122851b820adaa93697cef0abeeac878237a8d5e7dd165dabcb62aac7caed903",
+				"dweb:/ipfs/QmSK8YsRkUWczv6SV6nszZMpMsHxNkXea3NsbV3xueuabY"
+			]
+		}
+	},
+	"version": 1
+}
